@@ -25,8 +25,8 @@ body {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .site-nav .current {
@@ -274,16 +274,22 @@ body {
   background-color: var(--light-bg-color);
 }
 
+.team-content {
+  background-color: var(--basik-light-color);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 32px 16px;
+  text-align: center;
+}
+
 .team .name {
   font-size: 20px;
   line-height: 1.2;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
 .team-text {
   margin: 0;
-  padding-bottom: 32px;
+  font-weight: 400;
 }
 
 /* _____filters_____ */
@@ -312,6 +318,7 @@ body {
   letter-spacing: 0.04em;
   padding: 8px 16px;
   border-radius: 4px;
+  border: none;
 }
 
 .button-filters:hover,
@@ -327,10 +334,6 @@ body {
 
 /* _____project_____ */
 
-.container .project {
-  margin-top: 0;
-}
-
 .picture {
   display: flex;
   flex-wrap: wrap;
@@ -345,6 +348,7 @@ body {
 
 .project-contetnt {
   padding: 32px 0 32px 8px;
+  border: 0.5px solid var(--light-bg-color);
 }
 
 .project-title {
@@ -359,10 +363,7 @@ body {
   color: var(--body-text-color);
   margin-top: 8px;
   margin-bottom: 0;
-}
-
-.pic {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  font-weight: 400;
 }
 
 /* ______footer_____ */
@@ -377,28 +378,24 @@ body {
   color: var(--light-bg-color);
 }
 
+.footer p {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
 .footer .text {
   color: #e7e9fc;
   font-weight: 400;
   font-style: normal;
+  width: 264px;
 
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 16px;
   padding: 0;
+  margin: 0;
 }
 
 .footer .logo {
-  margin-top: 0;
-  margin-bottom: 16px;
   margin-right: 0;
   padding: 0;
-}
-
-.footer p {
-  margin: 0;
-}
-.info {
-  width: 264px;
-  margin: 0;
 }
