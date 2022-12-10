@@ -28,6 +28,10 @@ body {
   padding-right: 12px;
 }
 
+.site-nav .current {
+  color: var(--accent-color);
+}
+
 /* ______heder______ */
 .heder {
   align-items: center;
@@ -92,6 +96,10 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.site-nav .current {
+  color: var(--accent-color);
 }
 
 .site-adress a {
