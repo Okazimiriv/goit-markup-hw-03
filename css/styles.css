@@ -4,6 +4,7 @@
   --dark-bg-color: #2e2f42;
   --light-bg-color: #f4f4fd;
   --basik-light-color: #ffffff;
+  --gap24: 24px;
 }
 
 body {
@@ -62,7 +63,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(body-text-color);
+  color: var(--body-text-color);
 }
 
 .site-nav .link:focus,
@@ -94,8 +95,8 @@ body {
 .site-adress .link {
   color: var(--dark-bg-color);
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: var(--gap24);
+  padding-bottom: var(--gap24);
 }
 
 .site-nav .current {
@@ -176,11 +177,11 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  gap: 24px;
+  gap: var(--gap24);
 }
 
 .box-list {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 3 * var(--gap24)) / 4);
 }
 
 .visually-hidden {
@@ -229,12 +230,12 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  gap: 24px;
+  gap: var(--gap24);
   margin-bottom: 120px;
 }
 
 .items-list {
-  flex-basis: calc((100% - 2 * 24px) / 3);
+  flex-basis: calc((100% - 2 * var(--gap24)) / 3);
 }
 
 .works-title,
@@ -262,11 +263,11 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  gap: 24px;
+  gap: var(--gap24);
 }
 
 .card-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 3 * var(--gap24)) / 4);
 }
 
 .team {
@@ -294,7 +295,7 @@ body {
 }
 
 .filters li:not(:last-child) {
-  margin-right: 24px;
+  margin-right: var(--gap24);
 }
 
 .button-filters {
@@ -335,11 +336,11 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  gap: 24px;
+  gap: var(--gap24);
 }
 
 .project-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 3 * var(--gap24)) / 4);
 }
 
 .project-contetnt {
