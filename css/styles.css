@@ -129,14 +129,12 @@ body {
 
 .hero-title {
   color: var(--basik-light-color);
-  /* width: 492px; */
-  display: block;
-  box-sizing: inherit;
+  width: 492px;
 
   font-size: 56px;
   line-height: 1.07;
-  margin-top: 0;
-  margin-bottom: 48px;
+
+  margin: 0 auto 48px;
 }
 
 .button-hero {
