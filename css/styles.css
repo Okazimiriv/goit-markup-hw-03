@@ -114,12 +114,16 @@ body {
 .hero {
   background-color: var(--dark-bg-color);
   text-align: center;
+
   padding-top: 192px;
   padding-bottom: 192px;
 }
 
 .hero-title {
   color: var(--basik-light-color);
+  /* width: 492px; */
+  display: block;
+  box-sizing: inherit;
 
   font-size: 56px;
   line-height: 1.07;
@@ -156,7 +160,7 @@ body {
 
 /* ____advantages_____ */
 
-.advantages {
+.section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -214,9 +218,6 @@ body {
 
 /* _____works_____ */
 
-.works {
-}
-
 .items {
   display: flex;
   flex-wrap: wrap;
@@ -229,10 +230,6 @@ body {
 .items-list {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
-
-/* .items .items-list:not(:last-child) {
-  margin-right: 24px;
-} */
 
 .works-title,
 .team-title {
@@ -250,9 +247,9 @@ body {
 
 /* _____team_____ */
 
-.team-title {
+/* .team-title {
   padding-top: 120px;
-}
+} */
 
 .card {
   display: flex;
@@ -264,7 +261,6 @@ body {
 
 .card-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
-  padding-bottom: 120px;
 }
 
 .team {
@@ -284,6 +280,16 @@ body {
 }
 
 /* _____filters_____ */
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.filters li:not(:last-child) {
+  margin-right: 24px;
+}
 
 .button-filters {
   background-color: var(--light-bg-color);
@@ -318,18 +324,38 @@ body {
   margin-top: 0;
 }
 
+.picture {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 24px;
+}
+
+.project-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.project-contetnt {
+  padding: 32px 0 32px 8px;
+}
+
 .project-title {
   font-size: 20px;
   line-height: 1.2;
   color: var(--dark-bg-color);
-  margin-top: 32px;
-  margin-bottom: 0;
+
+  margin: 0;
 }
 
 .project-text {
   color: var(--body-text-color);
   margin-top: 8px;
-  margin-bottom: 32px;
+  margin-bottom: 0;
+}
+
+.pic {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 /* ______footer_____ */
@@ -344,24 +370,32 @@ body {
 
 .footer .text {
   color: #e7e9fc;
-
+  font-weight: 400;
   font-style: normal;
+
   font-size: 16px;
   line-height: 1.5;
-  margin: 0;
+  margin-top: 16px;
+  padding: 0;
 }
 
 .footer .container {
   padding-top: 100px;
   padding-bottom: 100px;
+  margin: 0;
 }
 
-.footer .logo p {
+.footer .logo {
   margin-top: 0;
   margin-bottom: 16px;
+  margin-right: 0;
+  padding: 0;
 }
 
-.text {
+.footer p {
+  margin: 0;
+}
+.info {
   width: 264px;
-  font-weight: 400;
+  margin: 0;
 }
